@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="style-cadastro-donatario.css" type="text/css" rel="stylesheet">
+    <title>OurBabies-Cadastro</title>
+</head>
+<body>
+    <header class="menu">
+        <h1 class="titulo">OurBabies</h1>
+        <a href="#"><h2>Home</h2></a>
+    </header>
+    <div class="tudo">
+      <div class="subtitulo">Cadastrar donatário</div>   
+      <form action="#">
+        <div class="usuario">
+            <div class="input-box">
+                <span class="detalhes">Nome completo</span>
+                <input type="text" placeholder="Digite seu nome" required>
+            </div>
+            <div class="input-box">
+                <span class="detalhes">Data nascimento</span>
+                <input type="date" required min="1900-01-01" max="2050-12-31">
+            </div>
+            <div class="input-box">
+                <span class="detalhes">Cadastro único</span>
+                <input type="text" placeholder="Cadastro único" inputmode="numeric" minlength="1" maxlength="11" required>
+            </div>
+            <div class="input-box">
+                <span class="detalhes">CPF</span>
+                <input type="text" placeholder="Digite seu CPF" inputmode="numeric" minlength="1" maxlength="11" required>
+            </div>
+            <div class="input-box">
+                <span class="detalhes">Telefone</span>
+                <input type="tel" placeholder="Digite seu telefone" minlength="1" maxlength="11" required>
+            </div>
+            <div class="input-box">
+                <span class="detalhes">Senha</span>
+                <input type="password" placeholder="Digite sua senha" minlength="1" maxlength="16" required>
+            </div>
+            <div class="input-box">
+                <span class="detalhes">Confirme senha</span>
+                <input type="password" placeholder="Confirme senha" minlength="1" maxlength="16" required>
+            </div>
+        </div>
+    </div>
+        <div class="genero" required>
+            <input type="radio" name="gener" id="dot-1">
+            <input type="radio" name="gener" id="dot-2">
+            <input type="radio" name="gener" id="dot-3">
+            <input type="radio" name="gener" id="dot-4">
+            <span class="genero-titulos">Qual seu gênero</span>
+            <div class="categoria">
+                <label for="dot-1">
+                    <span class="dot one"></span>
+                    <span classe="detalhes">Masculino</span>
+                </label>
+                <label for="dot-2">
+                    <span class="dot two"></span>
+                    <span classe="detalhes">Feminino</span>
+                </label>
+                <label for="dot-3">
+                    <span class="dot three"></span>
+                    <span classe="detalhes">Outros</span>
+                </label>
+                <label for="dot-4">
+                    <span class="dot thore"></span>
+                    <span classe="detalhes">Prefiro não dizer</span>
+                </label>
+            </div>
+        </div>
+        <div class="botao">
+            <input type="submit" value="Finalizar">
+        </div>
+      </form>
+    <div class="img">
+        <img src="Baby-amico.png">
+    </div>
+</body>
+</html>
